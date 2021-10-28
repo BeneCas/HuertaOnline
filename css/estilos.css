@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   background-color: white;
+}
+.div-nav-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+}
+.logo{
+    width: 20em;
+}
+.contenedor {
+  padding: 3.75rem 0;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.titulo {
+  color: green;
+  font-size: 1.875rem;
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+.wave {
+  height: 9.375rem;
+  overflow: hidden;
+}
+.svg-wave {
+  height: 100%;
+  width: 100%;
+}
+.path-wave {
+  stroke: none;
+  fill: rgb(255, 255, 255);
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 37.5rem;
+  background: #dce35b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(122, 45%, 49%, 0.658),
+      hsla(63, 71%, 62%, 0.61)
+    ),
+    url(../assets/de-la-granja-a-la-mesa-standard-scale-2_00x-gigapixel.png); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+      to right,
+      hsla(122, 45%, 49%, 0.658),
+      hsla(63, 71%, 62%, 0.61)
+    ),
+    url(../assets/de-la-granja-a-la-mesa-standard-scale-2_00x-gigapixel.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+nav {
+  text-align: right;
+
+}
+
+nav > a {
+vertical-align: middle;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 0.625rem;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+header .textos-header {
+  display: flex;
+  height: 26.875rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header h1 {
+  font-size: 3.125rem;
+  color: white;
+}
+
+.textos-header h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* sobre nosotros */
+
+.div-sobre-nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imagen-about-us {
+  width: 48%;
+}
+
+.sobre-nosotros .contenido-textos {
+  width: 48%;
+  margin-right: 1rem;
+}
+
+.contenido-textos h3 {
+  margin: 1rem 0;
+  color: #71ba41;
+}
+
+.contenido-textos p {
+  font-weight: 300;
+  text-align: start;
+}
+
+/* Galería */
+
+.portafolio {
+  background-color: #71ba41;
+}
+.portafolio .titulo {
+  color: white;
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagen-port {
+  width: 24%;
+  margin-bottom: 0.625rem;
+  height: 12.5rem;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0rem 0rem 0.375rem 0rem rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.imagen-port:hover {
+transform: scale(1.3);
+z-index: 3;
+}
+
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 3.125rem;
+}
+
+.hover-galeria p {
+    background-color:#2f5f0ead;
+  color: white;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  background-color: #71ba41;
+  color: white;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.card img {
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.video-de-la-semana {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.video-semana {
+  margin-bottom: 3.75rem;
+  font-size: 1.875rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background-image: url(../assets/patron.jpg);
+  background-size: contain;
+  background-position: center;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-title {
+  color: white;
+  font-size: 3rem;
+  background-color: rgb(80 120 10 / 80%);
+  margin-bottom: 1em;
+  border-radius: 3rem;
+  padding: 0rem 2rem;
+  text-align: center;
+  vertical-align: middle;
+
+  border: solid white 0.2rem;
+}
+
+.submit-btn {
+  background-color: rgb(80 120 10 / 80%);
+  color: rgba(256, 256, 256, 0.7);
+  border: 0;
+  border-radius: 15rem;
+  display: block;
+  text-align: center;
+  padding: 1rem 2.8rem;
+  width: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  border: solid white 0.2rem;
+}
+
+.submit-btn:hover {
+  transition: all 0.3s ease;
+  background-color: rgb(80 120 10 / 97%);
+}
+
+form input {
+  border: none;
+  width: 50%;
+  border-radius: 2rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  font-size: "open";
+}
+textarea {
+  border: none;
+  width: 50%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+}
+::-webkit-input-placeholder {
+  color: black;
+  padding-left: 0rem;
+  line-height: 2rem;
+}
+
+
+
+footer {
+  bottom: 0;
+}
+.footer-distributed {
+  background-color: #2e0a0a;
+  box-shadow: 0 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+
+  padding: 3.4375rem 3.125rem;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 2.25rem "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 {
+  color: #71ba41;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 1.25rem 0 0.75rem;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 1.5625rem;
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.625rem;
+  margin: 0.625rem 0.9375rem;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 1.0625rem;
+  line-height: 2.375rem;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #71ba41;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 1.25rem;
+  color: #92999f;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 1.5625rem;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 0.125rem;
+
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.1875rem;
+
+  margin-right: 0.1875rem;
+  margin-bottom: 0.3125rem;
+}
+
+@media (max-width: 55rem) {
+.div-nav-img{
+    flex-direction: column;
+    height: auto;
+  
+}
+.div-nav-img img{
+    width: 100%;
+}
+nav{
+    background-color:#69b432ba;
+}
+    .wave{
+        display: none;
+    }
+  .footer-distributed {
+    font: bold 0.875rem sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+
+  .div-sobre-nosotros {
+    flex-direction: column;
+  }
+  .sobre-nosotros .contenido-textos {
+    margin: auto;
+    width: 70%;
+  }
+
+  .galeria-port {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagen-port {
+    width: 90%;
+  }
+  iframe {
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .card img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .form-title {
+    padding: 0px 0.5rem;
+  }
+  form input{
+width: 100%;
+
+  }
+  textarea{
+  width: 100%;
+
+  }
+  .submit-btn{
+      width: 100%;
+  }
+  nav{
+      text-align: center;
+      padding: 0;
+  }
+  nav a{
+    line-height: 3rem;
+  }
+}
+
